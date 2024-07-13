@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HOME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sitename header">
+            <img src="logom.jpg">Workspace
+        </div>
+        <div class="searchbar">
+            <input type="search" placeholder="Search in Home" style="border: 2px solid; width: 250px; height: 40px;">
+            <input type="submit" value="search" style="border: 2px solid; margin: 2px; width: 50px; height: 30px;">
+        </div>
+        <div class="container2 menu">
+                    <div class="home">
+                        <img src="homel.jpg">
+                        <a class="active" href="home.html" onClick="activeHome()" id="home">Home</a>
+                    </div>
+
+                    <div class="customers">
+                        <img src="customerl.jpg">
+                        <a class="" href="customer.html" onClick="activeCustomers()" id="customers">Customers</a>
+                    </div>
+
+                    <div class="departments">
+                        <img src="departmentl.jpg">
+                        <a class="" href=".html" onClick="activeDepartments()" id="departments">Departments</a>
+                    </div>
+
+                    <div class="media">
+                        <img src="medial2.jpg">
+                        <a class="" href=".html" onClick="activeMedia()" id="media">Media</a>
+                    </div>
+                    <div class="myaccount">
+                        <img src="accountl.jpg">
+                        <a class="" href=".html" onClick="activeAccount()" id="account">My Account</a>
+                    </div>
+                    
+                <script type="text/javascript">
+                    function activeHome(){
+                        document.getElementById("home").clickList.add("active");
+                        document.getElementById("customers").clickList.remove("active");
+                        document.getElementById("departments").clickList.remove("active");
+                        document.getElementById("media").clickList.remove("active");
+                        document.getElementById("account").clickList.remove("active");
+                    }
+                    function activeCustomers(){
+                        document.getElementById("home").clickList.remove("active");
+                        document.getElementById("customers").clickList.add("active");
+                        document.getElementById("departments").clickList.remove("active");
+                        document.getElementById("media").clickList.remove("active");
+                        document.getElementById("account").clickList.remove("active");
+                    }
+                    function activeDepartments(){
+                        document.getElementById("home").clickList.remove("active");
+                        document.getElementById("customers").clickList.remove("active");
+                        document.getElementById("departments").clickList.add("active");
+                        document.getElementById("media").clickList.remove("active");
+                        document.getElementById("account").clickList.remove("active");
+                    }
+                    function activeMedia(){
+                        document.getElementById("home").clickList.remove("active");
+                        document.getElementById("customers").clickList.remove("active");
+                        document.getElementById("departments").clickList.remove("active");
+                        document.getElementById("media").clickList.add("active");
+                        document.getElementById("account").clickList.remove("active");
+                    }
+                    function activeCustomers(){
+                        document.getElementById("home").clickList.remove("active");
+                        document.getElementById("customers").clickList.remove("active");
+                        document.getElementById("departments").clickList.remove("active");
+                        document.getElementById("media").clickList.remove("active");
+                        document.getElementById("account").clickList.add("active");
+                    }
+                </script>
+
+
+        </div>
+        <div class="container3">
+            <div class="box nc">New Customers
+                <div class="boxdigit">24</div>
+            </div>
+            <div class="box da">Department Activity
+                <div class="boxdigit">434 <small class="small">+</small></div>
+            </div>
+            <div class="box tms">Total Media Size
+                <div class="boxdigit">10 <small class="small">TB</small></div>
+            </div>
+            <div class="cdetail">
+                    <table>
+                        <tr>
+                            <th colspan="5"><div class="cb">CUSTOMERS</div></th>
+                        </tr>
+                            <tr>
+                                <th>Customer ID</th>
+                                <th>Department ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Total Media Size</th>
+                            </tr>
+                            <tr>
+                                <td>ABC</td>
+                                <td>UHH</td>
+                                <td>JOHN</td>
+                                <td>johnnyj@gmail.com</td>
+                                <td>2 GB</td>
+                            </tr>
+                            <tr>
+                                <td>DEF636</td>
+                                <td>ASDFJ</td>
+                                <td>JANE</td>
+                                <td>jane@gmail.com</td>
+                                <td>0.4 GB</td>
+                            </tr>
+                            <tr>
+                                <td>GHI777</td>
+                                <td>SAFEF</td>
+                                <td>BOB</td>
+                                <td>bobby@gmail.com</td>
+                                <td>200 GB</td>
+                            </tr>
+                            <tr>
+                                <td>JKL366</td>
+                                <td>AFEEE</td>
+                                <td>MARY</td>
+                                <td>maryyy@gmail.com</td>
+                                <td>50 GB</td>
+                            </tr>
+                            <tr>
+                                <td>MNO222</td>
+                                <td>RRR</td>
+                                <td>KARAN</td>
+                                <td>karan@gmail.com</td>
+                                <td>45 GB</td>
+                            </tr>
+                            <tr>
+                                <td>KKK333</td>
+                                <td>HJHGF</td>
+                                <td>CHRISSY</td>
+                                <td>chris@gmail.com</td>
+                                <td>500 GB</td>
+                            </tr>
+                    </table>
+            </div>
+            <div class="ddetail">
+                <table>
+                    <tr>
+                        <th colspan="5"><div class="db">DEPARTMENTS</div></th>
+                    </tr>
+                        <tr>
+                            <th>Department ID</th>
+                            <th>Department Incharge</th>
+                            <th>Name</th>
+                            <th>Size </th>
+                            <th>Total Media Size</th>
+                        </tr>
+                        <tr>
+                            <td>ABC456</td>
+                            <td>JOHN</td>
+                            <td>JOHN</td>
+                            <td>23</td>
+                            <td>2 GB</td>
+                        </tr>
+                        <tr>
+                            <td>DEF666</td>
+                            <td>JANE</td>
+                            <td>JANE</td>
+                            <td>45</td>
+                            <td>0.4 GB</td>
+                        </tr>
+                        <tr>
+                            <td>XYZ444</td>
+                            <td>BOB</td>
+                            <td>BOB</td>
+                            <td>76</td>
+                            <td>200 GB</td>
+                        </tr>
+                        <tr>
+                            <td>YUP999</td>
+                            <td>MARY</td>
+                            <td>MARY</td>
+                            <td>87</td>
+                            <td>50 GB</td>
+                        </tr>
+                        <tr>
+                            <td>MNO222</td>
+                            <td>KARAN</td>
+                            <td>KARAN</td>
+                            <td>76</td>
+                            <td>45 GB</td>
+                        </tr>
+                        <tr>
+                            <td>KKK333</td>
+                            <td>CHRISSY</td>
+                            <td>CHRISSY</td>
+                            <td>78</td>
+                            <td>500 GB</td>
+                        </tr>
+                </table>
+            </div>
+            <div class="mdetail">
+                <table width="100%">
+                    <tr>
+                        <th><div class="mb">MEDIA</div></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="container4">
+                <div class="audio box">Audio
+                    <div class="boxdigit2">14 TB</div>
+                </div>
+                <div class="video box">Video
+                    <div class="boxdigit2">14 TB</div>
+                </div>
+                <div class="images box">Images
+                    <div class="boxdigit2">14 TB</div>
+                </div>
+                <div class="files box">Files
+                    <div class="boxdigit2">14 TB</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
